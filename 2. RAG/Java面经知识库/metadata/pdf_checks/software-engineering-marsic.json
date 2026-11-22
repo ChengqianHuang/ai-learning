@@ -1,0 +1,16 @@
+{
+  "path": "corpus/Books/软件工程与协作/software-engineering-marsic.pdf",
+  "sha256": "998382c87f42b72e925d239be61e0bfb663f21a883ab25f5659650e3e8e3fd0f",
+  "pages": 627,
+  "extracted_characters": 1536656,
+  "pages_with_text": 627,
+  "strict_pdf_parse": true,
+  "pdfplumber_fallback_pages": [
+    235
+  ],
+  "sample_render_page": 209,
+  "sample_image": "/tmp/java-backend-books-qa/software-engineering-marsic.png",
+  "rights_excerpts": [
+    " Copyright © 2012 by Ivan Marsic. All rights reserved. Rutgers University, New Brunswick, New Jersey Permission to reproduce or copy all or parts of th is material for non-profit use is granted on the condition that the author and source are credited. Suggestions and comments are welcomed. Author’s address: Rutgers University Department of Electrical and Computer Engineering 94 Brett Road Piscataway, New Jersey 08854 marsic@ece.rutg"
+  ]
+}

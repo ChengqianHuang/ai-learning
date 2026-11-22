@@ -1,0 +1,11 @@
+{
+  "path": "corpus/Books/操作系统与并发/xv6-riscv.pdf",
+  "sha256": "05c902ecc0a5c2fd147a3f77719b740ac454f9a28941d57d8cbce849c0539f49",
+  "pages": 116,
+  "extracted_characters": 269694,
+  "pages_with_text": 116,
+  "strict_pdf_parse": true,
+  "sample_render_page": 38,
+  "sample_image": "/tmp/java-backend-books-qa/xv6-riscv.png",
+  "rights_excerpts": []
+}

@@ -1,0 +1,18 @@
+{
+  "path": "corpus/Books/算法与数据结构/algorithms-erickson.pdf",
+  "sha256": "00295b82ff725c52a71351a0bb1ee1bdb1584e594a62395d3fb382aefd0f4d42",
+  "pages": 472,
+  "extracted_characters": 1124684,
+  "pages_with_text": 462,
+  "strict_pdf_parse": true,
+  "pdfplumber_fallback_pages": [],
+  "sample_render_page": 157,
+  "sample_image": "/tmp/java-backend-books-qa/algorithms-erickson.png",
+  "rights_excerpts": [
+    "e-/two.oldstyle (paperback) © Copyright /two.oldstyle/zero.oldstyle/one.Alt.oldstyle/nine.oldstyle Jeﬀ Erickson c b This work is available under a Creative Commons Attribution /four.oldstyle./zero.oldstyle International License. For license details, see http://creativecommons.org/licenses/by//four.oldstyle./zero.oldstyle/. Download this book at http://jeﬀe.cs.illinois.edu/teaching/algorithms/ or http://algorithms.wtf or https://archive.org/details/Algorithms-Jeﬀ-Erickson Plea",
+    "his work is available under a Creative Commons Attribution /four.oldstyle./zero.oldstyle International License. For license details, see http://creativecommons.org/licenses/by//four.oldstyle./zero.oldstyle/. Download this book at http://jeﬀe.cs.illinois.edu/teaching/algorithms/ or http://algorithms.wtf or https://archive.org/details/Algorithms-Jeﬀ-Erickson Please report errors at https://github.com/jeﬀgerickson/algorithms Portions of our programming are mechanically reproduce",
+    "r license details, see http://creativecommons.org/licenses/by//four.oldstyle./zero.oldstyle/. Download this book at http://jeﬀe.cs.illinois.edu/teaching/algorithms/ or http://algorithms.wtf or https://archive.org/details/Algorithms-Jeﬀ-Erickson Please report errors at https://github.com/jeﬀgerickson/algorithms Portions of our programming are mechanically reproduced, and we now begin our broadcast day.",
+    "his book is published under a Creative Commons Licence that allows you to use, redistribute, adapt, and remix its contentswithout my permission, as long as you point back to the original source. A complete electronic version of this book is freely available at any of the following locations: • The book web site: http://jeﬀe.cs.illinois.edu/teaching/algorithms/ • The mnemonic shortcut: http://algorithms.wtf • The bug-report site: https://github.com/jeﬀgerickson/algorithms • Th",
+    " the Yale Law Library under a Creative Commons Licence https://www.ﬂickr.com/photos/yalelawlibrary/albums//seven.oldstyle/two.oldstyle/one.Alt.oldstyle/five.oldstyle/seven.oldstyle/six.oldstyle/two.oldstyle/one.Alt.oldstyle/nine.oldstyle/five.oldstyle/four.oldstyle/six.oldstyle/eight.oldstyle/three.oldstyle/seven.oldstyle/six.oldstyle/four.oldstyle • Figure /five.oldstyle./three.oldstyle (page /one.Alt.oldstyle/eight.oldstyle/nine.oldstyle) — Internet Archive https://archive."
+  ]
+}

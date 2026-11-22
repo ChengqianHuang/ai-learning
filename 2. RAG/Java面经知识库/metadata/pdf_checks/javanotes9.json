@@ -1,0 +1,16 @@
+{
+  "path": "corpus/Books/Java与数据结构/javanotes9.pdf",
+  "sha256": "7a409be17956fa11e90c634d6de5a586d0415d668c56d252f66fb5580a362d9b",
+  "pages": 773,
+  "extracted_characters": 2200616,
+  "pages_with_text": 773,
+  "strict_pdf_parse": true,
+  "sample_render_page": 257,
+  "sample_image": "/tmp/java-backend-books-qa/javanotes9.png",
+  "rights_excerpts": [
+    "ore speciﬁcally: This work is licensed under the Creative Commo ns Attribution- NonCommercial-ShareAlike 4.0 License. To view a copy of thi s license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/. O ther uses require permission from the author. The web site for this book is: https://math.hws.edu/javano tes",
+    "f thi s license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/. O ther uses require permission from the author. The web site for this book is: https://math.hws.edu/javano tes",
+    "ished und er the terms of the Creative Commons Attribution-NonCommercial- ShareAlike 4.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/. For example, you can: • Post an unmodiﬁed copy of the on-line version on your own Web s ite (including the parts that list the author and state the license under which it is di stributed!). • Give away unmodiﬁed copies of this book or sell them at cost of production, as long as they meet the ",
+    "of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/. For example, you can: • Post an unmodiﬁed copy of the on-line version on your own Web s ite (including the parts that list the author and state the license under which it is di stributed!). • Give away unmodiﬁed copies of this book or sell them at cost of production, as long as they meet the requirements of the license. • Use the book as a textbook for a course that you are teaching (e ven though the st"
+  ]
+}

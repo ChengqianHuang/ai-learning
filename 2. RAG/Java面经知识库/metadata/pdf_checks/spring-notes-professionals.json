@@ -1,0 +1,15 @@
+{
+  "path": "corpus/Books/Java框架/spring-notes-professionals.pdf",
+  "sha256": "aa4e1d01a1501b782a0f99ad0ce31b2a593478b5c9174c2a0de814435fbb4cda",
+  "pages": 68,
+  "extracted_characters": 110171,
+  "pages_with_text": 68,
+  "strict_pdf_parse": true,
+  "pdfplumber_fallback_pages": [],
+  "sample_render_page": 22,
+  "sample_image": "/tmp/java-backend-books-qa/spring-notes-professionals.png",
+  "rights_excerpts": [
+    "ext content is released under Creative Commons BY-SA, see credits at the end of this book whom contributed to the various chapters. Images may be copyright of their respective owners unless otherwise speciﬁed This is an unoﬃcial free book created for educational purposes and is not aﬃliated with oﬃcial Spring® Framework group(s) or company(s) nor Stack Overﬂow. All trademarks and registered trademarks are the property of their respective company owners The information present",
+    "rious chapters. Images may be copyright of their respective owners unless otherwise speciﬁed This is an unoﬃcial free book created for educational purposes and is not aﬃliated with oﬃcial Spring® Framework group(s) or company(s) nor Stack Overﬂow. All trademarks and registered trademarks are the property of their respective company owners The information presented in this book is not guaranteed to be correct nor accurate, use at your own risk Please send feedback and correcti"
+  ]
+}

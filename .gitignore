@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.env.*
+!.env.example
+
+/2. RAG/rag-practice/data/
+/2. RAG/Java面经知识库/corpus/
+/2. RAG/Java面经知识库/metadata/book_discovery/
+/2. RAG/Java面经知识库/licenses/*/README.md
+/2. RAG/Java面经知识库/licenses/**/*.html
+/2. RAG/Java面经知识库/licenses/**/frontmatter-extract.txt
+*.pdf

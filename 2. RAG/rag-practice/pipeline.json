@@ -1,0 +1,16 @@
+{
+  "match": "hashmap",
+  "max_tokens": 480,
+  "batch_size": 8,
+  "top_k": 5,
+  "question": "LinkedHashMap 如何实现 LRU 缓存？",
+  "offline": true,
+  "generation": {
+    "base_url": "https://api.minimax.cn/anthropic",
+    "model": "MiniMax-M3.1-Flash",
+    "effort": "max",
+    "max_tokens": 4096,
+    "max_context_chars": 16000,
+    "timeout_seconds": 120
+  }
+}

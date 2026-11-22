@@ -1,0 +1,520 @@
+{
+  "repo": "doocs/jvm",
+  "name": "JVM",
+  "commit": "9e2fe9376f97a2458ae2ebddd653ccc0d91cff34",
+  "license": "CC-BY-SA-4.0",
+  "declared_license": {
+    "key": "cc-by-sa-4.0",
+    "name": "Creative Commons Attribution Share Alike 4.0 International",
+    "spdx_id": "CC-BY-SA-4.0",
+    "url": "https://api.github.com/licenses/cc-by-sa-4.0",
+    "node_id": "MDc6TGljZW5zZTI2"
+  },
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2b0ab5ddb646e767a06f3fb44f53d4f7b7cb73ac",
+      "url": "https://api.github.com/repos/doocs/jvm/git/trees/2b0ab5ddb646e767a06f3fb44f53d4f7b7cb73ac"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7238d30b3295193a3fbe46157dbf510d99ed8be6",
+      "url": "https://api.github.com/repos/doocs/jvm/git/trees/7238d30b3295193a3fbe46157dbf510d99ed8be6"
+    },
+    {
+      "path": ".github/workflows/cloudflare.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4861606aa37b27afdbf05ed5def8a82e691b43b1",
+      "size": 822,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/4861606aa37b27afdbf05ed5def8a82e691b43b1"
+    },
+    {
+      "path": ".github/workflows/compress.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f95ad344e2dce6eefe369f8f59bb4df119da9778",
+      "size": 904,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/f95ad344e2dce6eefe369f8f59bb4df119da9778"
+    },
+    {
+      "path": ".github/workflows/deploy.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3339d21bf24fd18b9d14a6fde9285462876fe7c7",
+      "size": 1081,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/3339d21bf24fd18b9d14a6fde9285462876fe7c7"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0441c21ddfb16037aa25ab682ae7b81f5b28def9",
+      "size": 535,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/0441c21ddfb16037aa25ab682ae7b81f5b28def9"
+    },
+    {
+      "path": ".npmrc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "755d52ef6b7fe9ea4863eb9893024c87e6d60f17",
+      "size": 135,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/755d52ef6b7fe9ea4863eb9893024c87e6d60f17"
+    },
+    {
+      "path": ".prettierignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0f469039a5ee31bc2d499ce360024b75d2cbdaf",
+      "size": 45,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/a0f469039a5ee31bc2d499ce360024b75d2cbdaf"
+    },
+    {
+      "path": ".prettierrc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c3a1694c6197a7f650710af84500613bdc906ec",
+      "size": 188,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/8c3a1694c6197a7f650710af84500613bdc906ec"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b7b82d0da2db857eda1a798dbd908ea136f07b5",
+      "size": 20131,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/3b7b82d0da2db857eda1a798dbd908ea136f07b5"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "788b556d3295f18c646af6291a7a0fdb7e4e8552",
+      "size": 6050,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/788b556d3295f18c646af6291a7a0fdb7e4e8552"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b721660b02b55696e7cf1fce25524630e046261f",
+      "url": "https://api.github.com/repos/doocs/jvm/git/trees/b721660b02b55696e7cf1fce25524630e046261f"
+    },
+    {
+      "path": "docs/.vitepress",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e194d9ea8d02b079f4015e3c59672ceedc158641",
+      "url": "https://api.github.com/repos/doocs/jvm/git/trees/e194d9ea8d02b079f4015e3c59672ceedc158641"
+    },
+    {
+      "path": "docs/.vitepress/config.mts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7531e0b00fe3ec481ab4d5a256236ae5e28af844",
+      "size": 2767,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/7531e0b00fe3ec481ab4d5a256236ae5e28af844"
+    },
+    {
+      "path": "docs/00-quickstart.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6eaa817f8fb4aaf906bffce5e273bd3731f1d6a3",
+      "size": 5498,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/6eaa817f8fb4aaf906bffce5e273bd3731f1d6a3"
+    },
+    {
+      "path": "docs/01-jvm-memory-structure.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cf4ac88a0dbb873e7a6ea44ed2ee1fdd267d973",
+      "size": 21176,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/5cf4ac88a0dbb873e7a6ea44ed2ee1fdd267d973"
+    },
+    {
+      "path": "docs/02-hotspot-jvm-object.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0a148da237f05bb77a9fc2961baf78c009e01c6",
+      "size": 4454,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/a0a148da237f05bb77a9fc2961baf78c009e01c6"
+    },
+    {
+      "path": "docs/03-gc-algorithms.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ea24aca2542459f8a0b4d4e8eb7406366e8f874",
+      "size": 10074,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/4ea24aca2542459f8a0b4d4e8eb7406366e8f874"
+    },
+    {
+      "path": "docs/04-hotspot-gc.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93817463956a207eff84f415037ebfb956f3d293",
+      "size": 6561,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/93817463956a207eff84f415037ebfb956f3d293"
+    },
+    {
+      "path": "docs/05-memory-allocation-gc.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e2c6284af6f4dd7f5b3aa4ff11956e9c4e0c42f",
+      "size": 5064,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/7e2c6284af6f4dd7f5b3aa4ff11956e9c4e0c42f"
+    },
+    {
+      "path": "docs/06-jvm-performance-tuning.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80f49c0a40b129156b501fc6e9b816f43a854f77",
+      "size": 3892,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/80f49c0a40b129156b501fc6e9b816f43a854f77"
+    },
+    {
+      "path": "docs/07-class-structure.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea88de6ff3c00cc3f9615171b26382a6137356d6",
+      "size": 9406,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/ea88de6ff3c00cc3f9615171b26382a6137356d6"
+    },
+    {
+      "path": "docs/08-load-class-time.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2ef7c1f1c4bc1a02323feadf5c813fadbe5667d",
+      "size": 4467,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/a2ef7c1f1c4bc1a02323feadf5c813fadbe5667d"
+    },
+    {
+      "path": "docs/09-load-class-process.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed7cb9f7762a0da52bdf37e3c939726808e33fcd",
+      "size": 6125,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/ed7cb9f7762a0da52bdf37e3c939726808e33fcd"
+    },
+    {
+      "path": "docs/10-class-loader.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "529887600c66f446b16a430328b0f787692c70ac",
+      "size": 3542,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/529887600c66f446b16a430328b0f787692c70ac"
+    },
+    {
+      "path": "docs/index.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bcdf6c4ddef3964aa57cf91eb13d90fc07ca412",
+      "size": 1776,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/6bcdf6c4ddef3964aa57cf91eb13d90fc07ca412"
+    },
+    {
+      "path": "docs/public",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "177c619e38a7d2b108caf02efbd217802906fc3a",
+      "url": "https://api.github.com/repos/doocs/jvm/git/trees/177c619e38a7d2b108caf02efbd217802906fc3a"
+    },
+    {
+      "path": "docs/public/favicon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfd8b03726285395770b57c03c6277aec4aa03b6",
+      "size": 355,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/cfd8b03726285395770b57c03c6277aec4aa03b6"
+    },
+    {
+      "path": "images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f1f199d7b36396695fde2cea7962d2a2f9f1d5a4",
+      "url": "https://api.github.com/repos/doocs/jvm/git/trees/f1f199d7b36396695fde2cea7962d2a2f9f1d5a4"
+    },
+    {
+      "path": "images/cc-by-nc-sa-80x15.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2fd6e637838e2f35802fb25fe7e3a1f85dd5ce6",
+      "size": 323,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/a2fd6e637838e2f35802fb25fe7e3a1f85dd5ce6"
+    },
+    {
+      "path": "images/cc-by-nc-sa-88x31.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fb95453740c7dd00b11208aff5944cbe40bba7c",
+      "size": 797,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/1fb95453740c7dd00b11208aff5944cbe40bba7c"
+    },
+    {
+      "path": "images/cc-by-sa-80x15.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f063cf54c03cb8430b98f3a997bd5c41a1636b66",
+      "size": 310,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/f063cf54c03cb8430b98f3a997bd5c41a1636b66"
+    },
+    {
+      "path": "images/cc-by-sa-88x31.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e2755dba22d7fe2efc90826b4779c75e9b77ee2",
+      "size": 729,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/1e2755dba22d7fe2efc90826b4779c75e9b77ee2"
+    },
+    {
+      "path": "images/classloader.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "363de2cfdf1402d1fd0976162bc37e9c3628332b",
+      "size": 2435,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/363de2cfdf1402d1fd0976162bc37e9c3628332b"
+    },
+    {
+      "path": "images/cms.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "020995bc44b48cb6cd7fe447eedd1975a98da5f5",
+      "size": 11216,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/020995bc44b48cb6cd7fe447eedd1975a98da5f5"
+    },
+    {
+      "path": "images/direct-pointer.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcd69f0a69afd6f31a2cff14c28b92f94bc772f3",
+      "size": 28162,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/fcd69f0a69afd6f31a2cff14c28b92f94bc772f3"
+    },
+    {
+      "path": "images/favicon-16x16.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd1962a4a7158952baa519db32ce20546972ad4c",
+      "size": 548,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/fd1962a4a7158952baa519db32ce20546972ad4c"
+    },
+    {
+      "path": "images/favicon-32x32.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e6aff96046651fce31d42b80e0229b36edbd5b3",
+      "size": 733,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/4e6aff96046651fce31d42b80e0229b36edbd5b3"
+    },
+    {
+      "path": "images/finalize-method-process.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4337d214d7d90c7ba9347bc9e65773096b6586c4",
+      "size": 192564,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/4337d214d7d90c7ba9347bc9e65773096b6586c4"
+    },
+    {
+      "path": "images/handle-access.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc298594340a7c455756856903c2ee979b0721e7",
+      "size": 29272,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/fc298594340a7c455756856903c2ee979b0721e7"
+    },
+    {
+      "path": "images/jvm-memory-structure.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be4c52079f6002ac74bd010948f1308774f4794d",
+      "size": 21950,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/be4c52079f6002ac74bd010948f1308774f4794d"
+    },
+    {
+      "path": "images/jvm-memory.png",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "f00df124ee056a377b7896c6a5b1eea2f7c673e1",
+      "size": 10314,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/f00df124ee056a377b7896c6a5b1eea2f7c673e1"
+    },
+    {
+      "path": "images/jvm-off-heap-memory.png",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4f0a999834144c3ae2ec95a446db14a0b030b39e",
+      "size": 16278,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/4f0a999834144c3ae2ec95a446db14a0b030b39e"
+    },
+    {
+      "path": "images/jvm-pdf.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17bf2146f2e913a91d5c7359a32ae1cc179af584",
+      "size": 46467,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/17bf2146f2e913a91d5c7359a32ae1cc179af584"
+    },
+    {
+      "path": "images/jvm-runtime-constant-pool.png",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "fd1927a3e9f0cb78f9a52aa228098bacdaa101f9",
+      "size": 12276,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/fd1927a3e9f0cb78f9a52aa228098bacdaa101f9"
+    },
+    {
+      "path": "images/jvm-stack.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "417db72a176431790c62d846007716ebb908a9db",
+      "size": 25322,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/417db72a176431790c62d846007716ebb908a9db"
+    },
+    {
+      "path": "images/loadclass.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8272e0527778b815c80297de1dfb461285fc5cc0",
+      "size": 44407,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/8272e0527778b815c80297de1dfb461285fc5cc0"
+    },
+    {
+      "path": "images/mark-and-compact.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32ebb3422b62bc4f6af5382918758cfad4dd07c8",
+      "size": 115222,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/32ebb3422b62bc4f6af5382918758cfad4dd07c8"
+    },
+    {
+      "path": "images/mark-and-copy.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0176d52b51e61858ac04b86ae40a217dfa117252",
+      "size": 112606,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/0176d52b51e61858ac04b86ae40a217dfa117252"
+    },
+    {
+      "path": "images/mark-and-sweep.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "577b1ed6e79688ae833f99a9e2c410117e75f999",
+      "size": 652381,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/577b1ed6e79688ae833f99a9e2c410117e75f999"
+    },
+    {
+      "path": "images/new-instruction.png",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "423fac59556b81c267b2127d7b7a20c69b6e0742",
+      "size": 15571,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/423fac59556b81c267b2127d7b7a20c69b6e0742"
+    },
+    {
+      "path": "images/object-memory-layout.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e97c8852addda8d77a5c8c4a7232a0ec94b47bd",
+      "size": 9569,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/9e97c8852addda8d77a5c8c4a7232a0ec94b47bd"
+    },
+    {
+      "path": "images/parnew.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f177eba87ee913c1746d74681bc8d2708ce0bd23",
+      "size": 7805,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/f177eba87ee913c1746d74681bc8d2708ce0bd23"
+    },
+    {
+      "path": "images/qrcode-for-doocs.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56c85c36857ceb647028d4c37b93737c0a43cc87",
+      "size": 18374,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/56c85c36857ceb647028d4c37b93737c0a43cc87"
+    },
+    {
+      "path": "images/qrcode-for-yanglbme.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a39ef3851898e0e9eb7ec4598cbf6132461ceff",
+      "size": 18750,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/6a39ef3851898e0e9eb7ec4598cbf6132461ceff"
+    },
+    {
+      "path": "images/serial.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3d6ea8e95b0d257d1731116556cef23d9c1b789",
+      "size": 5674,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/d3d6ea8e95b0d257d1731116556cef23d9c1b789"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ca96e928c0d7c10915a40facd519f87ac946d90",
+      "size": 830,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/4ca96e928c0d7c10915a40facd519f87ac946d90"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ff8e4d01a070e6791fee1bbe1d33683409d0d75",
+      "size": 74123,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/2ff8e4d01a070e6791fee1bbe1d33683409d0d75"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aea5f5ae9c0cb919b8280feba5712e8a15fdccae",
+      "size": 126,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/aea5f5ae9c0cb919b8280feba5712e8a15fdccae"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "97f2397869fb5879cc1415ed09cf2036ee0720cd",
+      "url": "https://api.github.com/repos/doocs/jvm/git/trees/97f2397869fb5879cc1415ed09cf2036ee0720cd"
+    },
+    {
+      "path": "src/worker.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9dd921e47aa2d85024c7320e33e6d1a77dd3864",
+      "size": 675,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/b9dd921e47aa2d85024c7320e33e6d1a77dd3864"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0971c09079d378a24576e5495e0ba22861fcde9b",
+      "size": 290,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/0971c09079d378a24576e5495e0ba22861fcde9b"
+    },
+    {
+      "path": "vercel.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ae9a3de54d117b5506c69083a44d41b2ef37b69",
+      "size": 41,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/7ae9a3de54d117b5506c69083a44d41b2ef37b69"
+    },
+    {
+      "path": "wrangler.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a78a82236a29d8331d53b284456e9362dc6f3112",
+      "size": 153,
+      "url": "https://api.github.com/repos/doocs/jvm/git/blobs/a78a82236a29d8331d53b284456e9362dc6f3112"
+    }
+  ]
+}

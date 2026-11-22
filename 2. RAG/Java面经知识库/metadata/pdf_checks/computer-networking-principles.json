@@ -1,0 +1,15 @@
+{
+  "path": "corpus/Books/网络与通信/computer-networking-principles.pdf",
+  "sha256": "f0b0d9672bf96c9df45130a3251ebde31a4da141f5dd40d63a54c9221fdd3060",
+  "pages": 413,
+  "extracted_characters": 1080476,
+  "pages_with_text": 412,
+  "strict_pdf_parse": true,
+  "sample_render_page": 137,
+  "sample_image": "/tmp/java-backend-books-qa/computer-networking-principles.png",
+  "rights_excerpts": [
+    " The book is released under a creative commons licence. Such an open-source license is motivated by two reasons. The ﬁrst is that we hope that this will allow many students to use the book to learn computer networks. The second is that I hope that other teachers will reuse, adapt and improve it. Time will tell if it is possible to build a community of contributors to improve and develop the book further. As a starting point, the ﬁrst release contains all the material for a on",
+    "rs listed above, used under a Creative Commons Attribution (CC BY) license made possible by funding from The Saylor Foundation’s Open Textbook Challenge in order to be incorporated into Saylor.org’ collection of open courses available at http://www.saylor.org. Full license terms may be viewed at : http://creativecommons.org/licenses/by/3.0/ 3",
+    "rms may be viewed at : http://creativecommons.org/licenses/by/3.0/ 3"
+  ]
+}

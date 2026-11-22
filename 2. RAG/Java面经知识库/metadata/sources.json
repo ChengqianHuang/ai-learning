@@ -1,0 +1,67 @@
+[
+  {
+    "repo": "Snailclimb/JavaGuide",
+    "name": "JavaGuide",
+    "commit": "992dae31eade2a34ba8dbbbcf5ed9de5511325ec",
+    "license": "Apache-2.0",
+    "declared_license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    }
+  },
+  {
+    "repo": "doocs/advanced-java",
+    "name": "AdvancedJava",
+    "commit": "80b89fb9496d7ea3213e402c8c3853399e00c363",
+    "license": "CC-BY-SA-4.0",
+    "declared_license": {
+      "key": "cc-by-sa-4.0",
+      "name": "Creative Commons Attribution Share Alike 4.0 International",
+      "spdx_id": "CC-BY-SA-4.0",
+      "url": "https://api.github.com/licenses/cc-by-sa-4.0",
+      "node_id": "MDc6TGljZW5zZTI2"
+    }
+  },
+  {
+    "repo": "dunwu/javacore",
+    "name": "JavaCore",
+    "commit": "27ab902df3ccea8b4850abdacce0659b9a25fc9e",
+    "license": "CC-BY-SA-4.0",
+    "declared_license": {
+      "key": "cc-by-sa-4.0",
+      "name": "Creative Commons Attribution Share Alike 4.0 International",
+      "spdx_id": "CC-BY-SA-4.0",
+      "url": "https://api.github.com/licenses/cc-by-sa-4.0",
+      "node_id": "MDc6TGljZW5zZTI2"
+    }
+  },
+  {
+    "repo": "doocs/jvm",
+    "name": "JVM",
+    "commit": "9e2fe9376f97a2458ae2ebddd653ccc0d91cff34",
+    "license": "CC-BY-SA-4.0",
+    "declared_license": {
+      "key": "cc-by-sa-4.0",
+      "name": "Creative Commons Attribution Share Alike 4.0 International",
+      "spdx_id": "CC-BY-SA-4.0",
+      "url": "https://api.github.com/licenses/cc-by-sa-4.0",
+      "node_id": "MDc6TGljZW5zZTI2"
+    }
+  },
+  {
+    "repo": "spring-projects/spring-framework",
+    "name": "SpringFramework",
+    "commit": "aa18571597f96e5508975a9a553762c4b69b9467",
+    "license": "Apache-2.0",
+    "declared_license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    }
+  }
+]

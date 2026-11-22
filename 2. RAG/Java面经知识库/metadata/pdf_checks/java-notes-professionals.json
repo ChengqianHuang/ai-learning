@@ -1,0 +1,12 @@
+{
+  "path": "corpus/Books/Java与数据结构/java-notes-professionals.pdf",
+  "sha256": "8751bee1658e8b2a247311eb9179625a4216b62f76d4b21545fb68e495dba706",
+  "pages": 982,
+  "extracted_characters": 1860929,
+  "pages_with_text": 982,
+  "strict_pdf_parse": true,
+  "text_extraction_engine": "PDFium",
+  "sample_render_page": 327,
+  "sample_image": "/tmp/java-backend-books-qa/java-notes-professionals.png",
+  "rights_excerpts": []
+}

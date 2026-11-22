@@ -1,0 +1,16 @@
+{
+  "path": "corpus/Books/网络与通信/computer-networks-systems.pdf",
+  "sha256": "e4ddb12a63f9ecebcc3504a0c3e8d9d5d4b89f1ffa600011f15efef5766ff90f",
+  "pages": 489,
+  "extracted_characters": 1405447,
+  "pages_with_text": 488,
+  "strict_pdf_parse": true,
+  "sample_render_page": 163,
+  "sample_image": "/tmp/java-backend-books-qa/computer-networks-systems.png",
+  "rights_excerpts": [
+    "ch likely violates somebody’s copyright) and the general sharing of ﬁles (which must be good since we’ve been taught to share since the age of two). What’s interesting about Gnutella is that it was one of the ﬁrst such systems to not depend on a centralized registry of objects. Instead, Gnutella participants arrange themselves into an overlay network similar to the one shown in Figure 9.25. That is, each node that runs the Gnutella software (i.e., implements the Gnutella prot",
+    " available under terms of the Creative Commons (CC BY 4.0) license. The community is invited to contribute corrections, improvements, updates, and new material under the same terms. Like many open source software projects, this one has been seeded with once restricted content: the 5th edition of Peterson and Davie, copyrighted by Elsevier. Our hope is that open sourcing this material will both make it widely available and serve as an attractor for new content: updating what’s",
+    "dition of Peterson and Davie, copyrighted by Elsevier. Our hope is that open sourcing this material will both make it widely available and serve as an attractor for new content: updating what’s already there, expanding it to cover new topics, and augmenting the text with additional teaching collateral. We will initially play an editorial role (curating and wordsmithing) for contributions that come back, but our plan is to share ownership of the project with others committed t",
+    "arry Peterson and Bruce Davie Copyright: Elsevier, 2012 Source: https://github.com/SystemsApproach License: CC BY 4.0 Read the Book An online version of the book is published at https://book.systemsapproach.org. You can also ﬁnd a PDF version here. To track progress and receive notices about new versions, you can follow the project on Facebook and Twitter. To read a running commentary on how the Internet is evolving, follow the Systems Approach Blog. Releases and Editions We "
+  ]
+}

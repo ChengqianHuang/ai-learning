@@ -1,0 +1,11 @@
+{
+  "path": "corpus/Books/数据库/architecture-database.pdf",
+  "sha256": "f922de7ac782e8c5e075b03adf8f4bffc29bd5edb52bd19ac407c5110a7c1fc2",
+  "pages": 119,
+  "extracted_characters": 237560,
+  "pages_with_text": 119,
+  "strict_pdf_parse": true,
+  "sample_render_page": 39,
+  "sample_image": "/tmp/java-backend-books-qa/architecture-database.png",
+  "rights_excerpts": []
+}

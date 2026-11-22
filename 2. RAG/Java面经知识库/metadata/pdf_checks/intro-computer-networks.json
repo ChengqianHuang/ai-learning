@@ -1,0 +1,13 @@
+{
+  "path": "corpus/Books/网络与通信/intro-computer-networks.pdf",
+  "sha256": "7802ff81caa07acf953681fc27de314ac872c7825dc552f066daf88538cb9310",
+  "pages": 967,
+  "extracted_characters": 2578246,
+  "pages_with_text": 966,
+  "strict_pdf_parse": true,
+  "sample_render_page": 322,
+  "sample_image": "/tmp/java-backend-books-qa/intro-computer-networks.png",
+  "rights_excerpts": [
+    ", released for free under the Creative Commons license described below. Mene, mene, tekel pharsin. Perhaps the last straw, for me, was patent 8195571 for a roundabout method to force students to purchase textbooks. (A simpler strategy might be to include the price of the book in the course.) At some point, faculty have to be advocates for their students rather than, well, Hirudinea. This is not to say that I have anything against for-proﬁt publishing. It is just that this par"
+  ]
+}

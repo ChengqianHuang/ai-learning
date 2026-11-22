@@ -1,0 +1,19 @@
+{
+  "path": "corpus/Books/Linux与运维/adventures-linux-command-line.pdf",
+  "sha256": "6410daf38a416866b97a40851fe8bcdecd38e797e207ff86a4f35ad63dfb8669",
+  "pages": 263,
+  "extracted_characters": 445957,
+  "pages_with_text": 255,
+  "strict_pdf_parse": true,
+  "pdfplumber_fallback_pages": [],
+  "sample_render_page": 87,
+  "sample_image": "/tmp/java-backend-books-qa/adventures-linux-command-line.png",
+  "rights_excerpts": [
+    "Copyright ©2014-2021, William Shotts This work is licensed under the Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 United States License. To view a copy of this license, visit the link above or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042. Linux® is the registered trademark of Linus Torvalds. All other trademarks belong to their respective owners. This book is part of the LinuxCommand.org projec",
+    ", William Shotts This work is licensed under the Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 United States License. To view a copy of this license, visit the link above or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042. Linux® is the registered trademark of Linus Torvalds. All other trademarks belong to their respective owners. This book is part of the LinuxCommand.org project, a site for Linux education and advocacy devote",
+    "is work is licensed under the Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 United States License. To view a copy of this license, visit the link above or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042. Linux® is the registered trademark of Linus Torvalds. All other trademarks belong to their respective owners. This book is part of the LinuxCommand.org project, a site for Linux education and advocacy devoted to helping users ",
+    "nk above or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042. Linux® is the registered trademark of Linus Torvalds. All other trademarks belong to their respective owners. This book is part of the LinuxCommand.org project, a site for Linux education and advocacy devoted to helping users of legacy operating systems migrate into the future. You may visit the LinuxCommand.org project at http s ://linuxcommand.org . Release History Version Date Des",
+    "ite3','/usr/share/doc/sqlite3/copyright',1 361); INSERT INTO Package_Files VALUES('sqlite3','/usr/share/man/man1/sqlite3.1.gz',3 696); INSERT INTO Package_Files VALUES('sqlite3','/usr/share/doc/sqlite3/changelog.De bian.gz',135); We’ll repeat this SELECT, but first we’ll change the output from standard output to a file named insert_sqlite3.sql. sqlite> .output insert_sqlite3.sql sqlite> select * from Package_Files where package_name = 'sqlite3'; This will write the stream of",
+    " /usr/share/doc/sqlite3/copyright 1261 sqlite3 /usr/share/man/man1/sqlite3.1.gz 3596 sqlite3 /usr/share/doc/sqlite3/changelog.Debian.gz 35 Adding and Deleting Columns SQL provides the ALTER TABLE statement to modify table’s schema. To demonstrate this, we will add a couple of columns to the Package_Descriptions table and fill them with values calculated from the Package_Files table. We’ll p"
+  ]
+}

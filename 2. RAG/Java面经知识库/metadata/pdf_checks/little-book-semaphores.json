@@ -1,0 +1,16 @@
+{
+  "path": "corpus/Books/操作系统与并发/little-book-semaphores.pdf",
+  "sha256": "25f1a7e82418be28bf200fa480bd060de1b7abbd2f46f7c215f0b682a9950a17",
+  "pages": 291,
+  "extracted_characters": 231004,
+  "pages_with_text": 291,
+  "strict_pdf_parse": true,
+  "sample_render_page": 97,
+  "sample_image": "/tmp/java-backend-books-qa/little-book-semaphores.png",
+  "rights_excerpts": [
+    " Second Edition Version 2.2.2 Copyright 2016 Allen B. Downey Permission is granted to copy, distribute and/or modify thi s document under the terms of the Creative Commons Attributio n- NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) at https://creativecommons.org/licenses/by-nc-sa/4.0. The original form of this book is LaTeX source code. Compilin g this LaTeX source has the eﬀect of generating a device-independent rep resentation of a book, which can be converte",
+    "opyright 2016 Allen B. Downey Permission is granted to copy, distribute and/or modify thi s document under the terms of the Creative Commons Attributio n- NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) at https://creativecommons.org/licenses/by-nc-sa/4.0. The original form of this book is LaTeX source code. Compilin g this LaTeX source has the eﬀect of generating a device-independent rep resentation of a book, which can be converted to other formats and printed.",
+    "cument under the terms of the Creative Commons Attributio n- NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) at https://creativecommons.org/licenses/by-nc-sa/4.0. The original form of this book is LaTeX source code. Compilin g this LaTeX source has the eﬀect of generating a device-independent rep resentation of a book, which can be converted to other formats and printed. This book was typeset by the author using latex, dvips and ps2 pdf, among other free, open-so",
+    " (CC BY-NC-SA 4.0) at https://creativecommons.org/licenses/by-nc-sa/4.0. The original form of this book is LaTeX source code. Compilin g this LaTeX source has the eﬀect of generating a device-independent rep resentation of a book, which can be converted to other formats and printed. This book was typeset by the author using latex, dvips and ps2 pdf, among other free, open-source programs. The LaTeX source for this book is available from greenteapress.com/sem2/1."
+  ]
+}

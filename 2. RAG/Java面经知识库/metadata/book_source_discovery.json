@@ -1,0 +1,182 @@
+[
+  {
+    "url": "https://greenteapress.com/wp/think-os/",
+    "links": [
+      "http://greenteapress.com/thinkos/thinkos.pdf",
+      "http://creativecommons.org/licenses/by-nc/3.0/"
+    ]
+  },
+  {
+    "url": "https://greenteapress.com/wp/semaphores/",
+    "links": [
+      "http://greenteapress.com/semaphores/LittleBookOfSemaphores.pdf",
+      "http://creativecommons.org/licenses/by-nc-sa/4.0"
+    ]
+  },
+  {
+    "url": "https://beej.us/guide/bgnet/",
+    "links": [
+      "https://beej.us/guide/bgnet/pdf/bgnet_usl_c_1.pdf",
+      "https://beej.us/guide/bgnet/pdf/bgnet_usl_c_2.pdf",
+      "https://beej.us/guide/bgnet/pdf/bgnet_a4_c_1.pdf",
+      "https://beej.us/guide/bgnet/pdf/bgnet_a4_c_2.pdf",
+      "https://beej.us/guide/bgnet/pdf/bgnet_usl_bw_1.pdf",
+      "https://beej.us/guide/bgnet/pdf/bgnet_usl_bw_2.pdf",
+      "https://beej.us/guide/bgnet/pdf/bgnet_a4_bw_1.pdf",
+      "https://beej.us/guide/bgnet/pdf/bgnet_a4_bw_2.pdf",
+      "https://beej.us/guide/bgnet/translations/bgnet_ptbr.pdf",
+      "http://www.asawicki.info/Mirror/Beej_s%20Guide%20to%20Network%20Programming%20PL/bgnet.pdf",
+      "https://beej.us/guide/bgnet/translations/bgnet_A4_rus.pdf"
+    ]
+  },
+  {
+    "url": "https://beej.us/guide/bgipc/",
+    "links": [
+      "https://beej.us/guide/bgipc/pdf/bgipc_usl_c_1.pdf",
+      "https://beej.us/guide/bgipc/pdf/bgipc_usl_c_2.pdf",
+      "https://beej.us/guide/bgipc/pdf/bgipc_a4_c_1.pdf",
+      "https://beej.us/guide/bgipc/pdf/bgipc_a4_c_2.pdf",
+      "https://beej.us/guide/bgipc/pdf/bgipc_usl_bw_1.pdf",
+      "https://beej.us/guide/bgipc/pdf/bgipc_usl_bw_2.pdf",
+      "https://beej.us/guide/bgipc/pdf/bgipc_a4_bw_1.pdf",
+      "https://beej.us/guide/bgipc/pdf/bgipc_a4_bw_2.pdf"
+    ]
+  },
+  {
+    "url": "https://intronetworks.cs.luc.edu/",
+    "links": [
+      "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "https://intronetworks.cs.luc.edu/current2/ComputerNetworks.pdf",
+      "https://intronetworks.cs.luc.edu/current2/ComputerNetworks.epub",
+      "https://intronetworks.cs.luc.edu/current1/ComputerNetworks.pdf",
+      "https://intronetworks.cs.luc.edu/current1/ComputerNetworks.epub",
+      "https://intronetworks.cs.luc.edu/1/ComputerNetworks.pdf",
+      "https://intronetworks.cs.luc.edu/1/ComputerNetworks.epub"
+    ]
+  },
+  {
+    "url": "https://www.computer-networking.info/",
+    "links": [
+      "https://github.com/cnp3/ebook/releases/download/draft-3rd/CNP3-2021.epub",
+      "https://github.com/cnp3/ebook/releases/download/draft-3rd/CNP3-2021.pdf",
+      "https://www.computer-networking.info/_downloads/d2fa2bcdefb52011ae73bffe908ba250/CNP3-2021.pdf",
+      "https://arxiv.org/pdf/1904.06910.pdf"
+    ]
+  },
+  {
+    "url": "https://book.systemsapproach.org/",
+    "links": [
+      "https://book.systemsapproach.org/README.html#releases-and-editions"
+    ]
+  },
+  {
+    "url": "https://producingoss.com/",
+    "links": [
+      "https://producingoss.com/en/producingoss-letter.pdf",
+      "https://producingoss.com/en/producingoss-a4.pdf",
+      "https://producingoss.com/en/producingoss-b5.pdf",
+      "https://producingoss.com/en/producingoss-c5.pdf",
+      "https://producingoss.com/download.html",
+      "https://producingoss.com/en/producingoss.epub",
+      "https://producingoss.com/zh/producingoss.epub",
+      "https://knihy.nic.cz/files/edice/tvorba_os_softwaru.pdf",
+      "https://knihy.nic.cz/files/edice/tvorba_os_softwaru.pdf",
+      "https://producingoss.com/de/producingoss.epub",
+      "https://producingoss.com/ja/producingoss.epub",
+      "https://producingoss.com/principles-of-participation-FLATS-2007.pdf",
+      "http://www.questioncopyright.org/files/open-information-communities/principles-of-participation.pdf"
+    ]
+  },
+  {
+    "url": "https://git-scm.com/book/en/v2",
+    "links": [
+      "https://github.com/progit/progit2/releases/download/2.1.450/progit.pdf",
+      "https://github.com/progit/progit2/releases/download/2.1.450/progit.epub",
+      "https://creativecommons.org/licenses/by-nc-sa/3.0/"
+    ]
+  },
+  {
+    "url": "https://git-scm.com/book/zh/v2",
+    "links": [
+      "https://github.com/progit/progit2-zh/releases/download/2.1.80/progit.pdf",
+      "https://github.com/progit/progit2-zh/releases/download/2.1.80/progit.epub",
+      "https://github.com/progit/progit2-zh/releases/download/2.1.80/progit.mobi",
+      "https://creativecommons.org/licenses/by-nc-sa/3.0/"
+    ]
+  },
+  {
+    "url": "https://redbook.io/",
+    "error": "curl: (28) SSL connection timeout\n"
+  },
+  {
+    "url": "https://webdam.inria.fr/Alice/",
+    "error": "curl: (60) SSL: no alternative certificate subject name matches target host name 'webdam.inria.fr'\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
+  },
+  {
+    "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+    "links": [
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/Algorithms-JeffE.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/Algorithms-JeffE.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/!!-frontmatter.pdf",
+      "http://creativecommons.org/licenses/by/4.0/",
+      "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/Algorithms-JeffE.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/Algorithms-JeffE-2up.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/!!-frontmatter.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/00-intro.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/01-recursion.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/02-backtracking.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/03-dynprog.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/04-greedy.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/05-graphs.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/06-dfs.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/07-mst.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/08-sssp.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/09-apsp.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/10-maxflow.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/11-maxflowapps.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/12-nphard.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/book/99-backmatter.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/notes/A-fft.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/notes/B-fastexpo.pdf",
+      "https://jeffe.cs.illinois.edu/teaching/algorithms/notes/C-automata-dynprog.pdf"
+    ]
+  },
+  {
+    "url": "https://www.kernel.org/pub/linux/kernel/people/paulmck/perfbook/",
+    "links": []
+  },
+  {
+    "url": "https://linuxcommand.org/tlcl.php",
+    "links": [
+      "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "https://sourceforge.net/projects/linuxcommand/files/TLCL/25.12/TLCL-25.12A.pdf/download",
+      "https://sourceforge.net/projects/linuxcommand/files/TLCL/25.12/TLCL-25.12-RELEASE_NOTES.txt/download",
+      "https://sourceforge.net/projects/linuxcommand/files/TLCL/25.12/TLCL-25.12A-Scripts.tar.gz/download",
+      "https://sourceforge.net/projects/omlx/files/open%20books/TLCL/The_Linux_Command_Line-arabic-14.07.pdf/download",
+      "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+      "https://sourceforge.net/projects/linuxcommand/files/AWTLCL/21.10/AWTLCL-21.10.pdf/download"
+    ]
+  },
+  {
+    "url": "https://pdos.csail.mit.edu/6.1810/2025/xv6.html",
+    "links": [
+      "https://pdos.csail.mit.edu/6.1810/2025/xv6/book-riscv-rev5.pdf",
+      "https://pdos.csail.mit.edu/6.1810/2025/xv6/xv6-src-booklet-rev5.pdf",
+      "http://pdos.csail.mit.edu/6.828/2005/readings/pdp11-40.pdf",
+      "https://creativecommons.org/licenses/by/3.0/us/"
+    ]
+  },
+  {
+    "url": "https://softwarefoundations.cis.upenn.edu/lf-current/",
+    "links": []
+  },
+  {
+    "url": "https://softwarefoundations.cis.upenn.edu/plf-current/",
+    "links": []
+  },
+  {
+    "url": "https://engsoftmoderna.info/en/",
+    "error": "curl: (56) The requested URL returned error: 404\n"
+  }
+]
