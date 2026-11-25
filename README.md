@@ -7,6 +7,7 @@
 - [RAG 实验与运行说明](2.%20RAG/rag-practice/README.md)
 - [Java 与后端语料来源](2.%20RAG/Java面经知识库/README.md)
 - [Agent 与工具调用](3.%20Agent/笔记/1.%20Agent%20与工具调用.md)
+- [Agent 代码实践与运行说明](3.%20Agent/agent-practice/README.md)
 - [A2A 与远程 agent](6.%20概念实践/笔记/A2A.md)
 - [A2A 实践与运行说明](6.%20概念实践/a2a/README.md)
 
