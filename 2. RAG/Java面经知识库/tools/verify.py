@@ -84,7 +84,8 @@ def main():
     for source in stats['by_source']:
         lines.extend(['## '+source,''])
         for r in sorted((r for r in records if r['source']==source),key=lambda r:r['path']):
-            lines.append('- ['+r['title'].replace('[','').replace(']','')+'](<'+r['path']+'>) · '+r['topic'])
+            title = r['title'].replace('[', '').replace(']', '')
+            lines.append(f"- [{title}](<{r['source_url']}>) · {r['topic']}")
         lines.append('')
     (ROOT/'目录.md').write_text('\n'.join(lines))
     print(json.dumps(stats,ensure_ascii=False,indent=2))

@@ -399,7 +399,7 @@ python client.py "任务可以跨进程恢复，只要带着 task_id 回来。" 
 
 任务没有重建，状态从 `WORKING` 接着走。这就是 Task 相对普通请求的价值：状态在服务端，不在客户端连接上。
 
-前提是 `InMemoryTaskStore` 没丢。它把任务放在服务端进程内存里，重启服务端，`GetTask` 就查不到了。真正的跨进程恢复要换 `DatabaseTaskStore`（`a2a-sdk[sql]`）。
+客户端可以换进程继续。实验使用的 `InMemoryTaskStore` 把任务放在服务端内存里。若要在服务端重启后继续处理同一任务，需要持久化任务状态，例如使用 `DatabaseTaskStore`（`a2a-sdk[sql]`）。
 
 ## 6.6 第五步：绕过 SDK 看协议
 

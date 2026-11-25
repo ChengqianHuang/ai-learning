@@ -14,13 +14,15 @@ booklines=['# 后端书籍目录','',f'共 {len(books)} 份完整 PDF：{whole_b
            '| 书籍 | 主题 | 语言 | 页数 | 原始来源 | 许可/使用条款 |','| --- | --- | --- | ---: | --- | --- |']
 for r in sorted(books,key=lambda r:(r.get('subject','Java与数据结构'),r['title'])):
     page=r.get('pages',pdf_report.get(r['path'],{}).get('pages',''))
-    booklines.append(f"| [{r.get('title_zh',r['title'])}](<{r['path']}>) | {r.get('subject','Java与数据结构')} | {'中文' if r['language']=='zh' else '英文'} | {page} | [官方页面]({r['source_url']}) | {r['license']} |")
+    booklines.append(f"| {r.get('title_zh',r['title'])} | {r.get('subject','Java与数据结构')} | {'中文' if r['language']=='zh' else '英文'} | {page} | [官方页面](<{r['source_url']}>) | {r['license']} |")
 (ROOT/'书籍目录.md').write_text('\n'.join(booklines)+'\n')
 source_rows='\n'.join(f'| {name} | {count} |' for name,count in s['by_source'].items())
 topic_rows='\n'.join(f'| {name} | {count} |' for name,count in s['by_topic'].items())
 text=f'''# Java 与后端知识库
 
 本知识库用于学习 Java 面试与后端基础专题 RAG。收集日期：2026-11-13。
+
+公开目录链接到上游文档和图书发布页。本地语料保存于 `corpus/`，文件路径、来源和校验值列在[来源清单](metadata/manifest.jsonl)中。下列统计来自完整的本地语料快照。
 
 ## 已交付内容
 
@@ -41,7 +43,7 @@ text=f'''# Java 与后端知识库
 - [CSV 文件清单](metadata/文件清单.csv)：文件名、主题、来源、语言、许可、路径、链接和校验值。
 - [RAG 来源清单](metadata/manifest.jsonl)：一行对应一个正文文件，适合作为后续加载入口。
 - [核验报告](metadata/verification.json)：实际数量、大小、格式、语言和去重检查。
-- `licenses/`：保存上游许可证、README 或书籍官方发布页。
+- `licenses/` 保存上游许可证和书籍授权来源信息。上游 README、发布页快照和版权页摘录留在本地。
 
 ## 主题覆盖
 

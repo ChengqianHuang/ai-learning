@@ -5,7 +5,5 @@
   "extracted_characters": 269694,
   "pages_with_text": 116,
   "strict_pdf_parse": true,
-  "sample_render_page": 38,
-  "sample_image": "/tmp/java-backend-books-qa/xv6-riscv.png",
-  "rights_excerpts": []
+  "sample_render_page": 38
 }

@@ -5,11 +5,5 @@
   "extracted_characters": 232117,
   "pages_with_text": 190,
   "strict_pdf_parse": true,
-  "sample_render_page": 63,
-  "sample_image": "/tmp/java-backend-books-qa/Think_Data_Structures.png",
-  "rights_excerpts": [
-    "Copyright©2016 Allen B. Downey. Green Tea Press 9 Washburn Ave Needham, MA 02492 Permission is granted to copy, distribute, and/or modify this work under the terms of the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License, which is available athttps://greenteapress.com/dast/ cc30. The original form of this book is LATEX source code. Compiling this code has the effect of generating a device-independent representation of the",
-    "ashburn Ave Needham, MA 02492 Permission is granted to copy, distribute, and/or modify this work under the terms of the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License, which is available athttps://greenteapress.com/dast/ cc30. The original form of this book is LATEX source code. Compiling this code has the effect of generating a device-independent representation of the book, which can be converted to other formats and printed. The LATEX source for ",
-    "s work under the terms of the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License, which is available athttps://greenteapress.com/dast/ cc30. The original form of this book is LATEX source code. Compiling this code has the effect of generating a device-independent representation of the book, which can be converted to other formats and printed. The LATEX source for this book is available fromhttps://greenteapress. com/dast/repo."
-  ]
+  "sample_render_page": 63
 }

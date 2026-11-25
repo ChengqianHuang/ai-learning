@@ -5,12 +5,5 @@
   "extracted_characters": 490786,
   "pages_with_text": 371,
   "strict_pdf_parse": true,
-  "sample_render_page": 124,
-  "sample_image": "/tmp/java-backend-books-qa/Think_Java_2e.png",
-  "rights_excerpts": [
-    "Copyright©2020 Allen B. Downey and Chris Mayfield. Green Tea Press 9 Washburn Ave Needham, MA 02492 Permission is granted to copy, distribute, and/or modify this work under the terms of the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License, which is available athttps://creativecommons.org/ licenses/by-nc-sa/4.0/. The original form of this book is LATEX source code. Compiling this code has the effect of generating a d",
-    "ashburn Ave Needham, MA 02492 Permission is granted to copy, distribute, and/or modify this work under the terms of the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License, which is available athttps://creativecommons.org/ licenses/by-nc-sa/4.0/. The original form of this book is LATEX source code. Compiling this code has the effect of generating a device-independent representation of the book, which can be converted to other formats and printed. T",
-    "s work under the terms of the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License, which is available athttps://creativecommons.org/ licenses/by-nc-sa/4.0/. The original form of this book is LATEX source code. Compiling this code has the effect of generating a device-independent representation of the book, which can be converted to other formats and printed. The LATEX source for this book is available fromhttps://thinkjava.org/ andhttps://github.co",
-    " which is available athttps://creativecommons.org/ licenses/by-nc-sa/4.0/. The original form of this book is LATEX source code. Compiling this code has the effect of generating a device-independent representation of the book, which can be converted to other formats and printed. The LATEX source for this book is available fromhttps://thinkjava.org/ andhttps://github.com/ChrisMayfield/ThinkJava2."
-  ]
+  "sample_render_page": 124
 }

@@ -5,10 +5,5 @@
   "extracted_characters": 455300,
   "pages_with_text": 322,
   "strict_pdf_parse": true,
-  "sample_render_page": 111,
-  "sample_image": "/tmp/java-backend-books-qa/open-data-structures-java.png",
-  "rights_excerpts": [
-    "ble, for two reasons: (1) The copyright belongs to the author and/or publisher, either of whom may not allow it. (2) The source code for these books is often not avail- able. That is, the Word, WordPerfect, FrameMaker, or L ATEX source for the book is not available, and even the version of the software that han- dles this source may not be available. The goal of this project is to free undergraduate computer science stu- dents from having to pay for an introductory data struc",
-    "ble there is released under a Creative Commons Attribution license, meaning that anyone is free to share: to copy, dis- tribute and transmit the work; and toremix: to adapt the work, including the right to make commercial use of the work. The only condition on these rights is attribution: you must acknowledge that the derived work contains code and/or text from opendatastructures.org. 1http://opendatastructures.org 2https://github.com/patmorin/ods xi"
-  ]
+  "sample_render_page": 111
 }

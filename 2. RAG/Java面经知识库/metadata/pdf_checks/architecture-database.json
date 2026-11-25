@@ -5,7 +5,5 @@
   "extracted_characters": 237560,
   "pages_with_text": 119,
   "strict_pdf_parse": true,
-  "sample_render_page": 39,
-  "sample_image": "/tmp/java-backend-books-qa/architecture-database.png",
-  "rights_excerpts": []
+  "sample_render_page": 39
 }

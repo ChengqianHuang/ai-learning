@@ -8,9 +8,5 @@
   "pdfplumber_fallback_pages": [
     235
   ],
-  "sample_render_page": 209,
-  "sample_image": "/tmp/java-backend-books-qa/software-engineering-marsic.png",
-  "rights_excerpts": [
-    " Copyright © 2012 by Ivan Marsic. All rights reserved. Rutgers University, New Brunswick, New Jersey Permission to reproduce or copy all or parts of th is material for non-profit use is granted on the condition that the author and source are credited. Suggestions and comments are welcomed. Author’s address: Rutgers University Department of Electrical and Computer Engineering 94 Brett Road Piscataway, New Jersey 08854 marsic@ece.rutg"
-  ]
+  "sample_render_page": 209
 }

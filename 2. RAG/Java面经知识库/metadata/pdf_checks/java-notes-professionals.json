@@ -6,7 +6,5 @@
   "pages_with_text": 982,
   "strict_pdf_parse": true,
   "text_extraction_engine": "PDFium",
-  "sample_render_page": 327,
-  "sample_image": "/tmp/java-backend-books-qa/java-notes-professionals.png",
-  "rights_excerpts": []
+  "sample_render_page": 327
 }

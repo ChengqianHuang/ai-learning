@@ -5,14 +5,5 @@
   "extracted_characters": 206754,
   "pages_with_text": 133,
   "strict_pdf_parse": true,
-  "sample_render_page": 45,
-  "sample_image": "/tmp/java-backend-books-qa/database-design2.png",
-  "rights_excerpts": [
-    "rienne Watt and Nelson Eng is licensed under a Creative Commons Attribution 4.0 International License, except where otherwise noted. Unless otherwise noted within this book, this book is released under a Creative Commons Attribution 4.0 International License also known as a CC-BY license. This means you are free to copy, redistribute, modify or adapt this book. Under this license, anyone who redistributes or modifies this textbook, in whole or in part, can do so for free prov",
-    "elson Eng is licensed under a Creative Commons Attribution 4.0 International License, except where otherwise noted. Unless otherwise noted within this book, this book is released under a Creative Commons Attribution 4.0 International License also known as a CC-BY license. This means you are free to copy, redistribute, modify or adapt this book. Under this license, anyone who redistributes or modifies this textbook, in whole or in part, can do so for free providing they proper",
-    "this book is released under a Creative Commons Attribution 4.0 International License also known as a CC-BY license. This means you are free to copy, redistribute, modify or adapt this book. Under this license, anyone who redistributes or modifies this textbook, in whole or in part, can do so for free providing they properly attribute the book. Additionally, if you redistribute this textbook, in whole or in part, in either a print or digital format, then you must retain on eve",
-    "this adaptation, refer to the Copyright statement at the bottom of the home page. This adaptation was a part of the B.C. Open Textbook project. In October 2012, the B.C. Ministry of Advanced Education announced its support for the creation of open textbooks for the 40 highest-enrolled first and second year subject areas in the province’s public post-secondary system. Open textbooks are open educational resources (OER); they are instructional resources created and shared in wa",
-    "rent model than traditionally copyrighted materials. OER are defined as â€œteaching, learning, and research resources that reside in the public domain or have been released under an intellectual property license that permits their free use and re-purposing by others (Hewlett Foundation). Our open textbooks are openly licensed using a Creative Commons license, and are offered in various e-book formats free of charge, or as printed books that are available at cost. For more inf",
-    "s are openly licensed using a Creative Commons license, and are offered in various e-book formats free of charge, or as printed books that are available at cost. For more information about the origin of this project, please contact opentext@bccampus.ca. If you are an instructor who is using this book for a course, please let eCampusOntario know through its adoption form viii | About the Book"
-  ]
+  "sample_render_page": 45
 }
