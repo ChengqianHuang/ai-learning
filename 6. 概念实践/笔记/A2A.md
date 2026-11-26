@@ -1,10 +1,10 @@
 # 6. A2A 与远程 agent
 
-A2A 是 Agent2Agent 的简称，一个让独立部署的 agent 互相通信的协议。2025 年 4 月由 Google 发起，后来交给 Linux Foundation，规范现在是 v1.0.1。
+A2A 是 Agent2Agent 的简称，用于独立部署的 agent 之间通信。本文按 v1.0.1 规范讲解。 [A2A v1.0.1 规范](https://a2a-protocol.org/v1.0.1/specification/)
 
-它要解决的情况是这样：A 团队做了个查内部文档的 agent，B 团队做了个跑数据处理的 agent，两边想互相调用。各自都有 HTTP 接口，但字段命名、鉴权方式、重试策略、任务进度怎么表示全不一样，每接一对就要写一次适配。A2A 把这些约定下来——能力用 Agent Card 声明在固定路径，任务用 Task 表示并带 ID 和状态，消息用 Message 传，结果用 Artifact 交，传输走 JSON-RPC over HTTP。
+A 团队的 agent 负责查内部文档，B 团队的 agent 负责跑数据处理。接入同一协议后，两边可以通过 Agent Card 发现能力和接口，用 Message 传递指令，用 Task 跟踪进度，用 Artifact 交付产物。A2A 定义了 JSON-RPC、gRPC 和 HTTP+JSON 三种协议绑定，本实验使用 JSON-RPC over HTTP。调用方按卡片声明配置鉴权，并根据任务和接口契约决定重试。 [A2A v1.0.1 规范](https://a2a-protocol.org/v1.0.1/specification/)
 
-一次完整调用大致是这样：客户端先 `GET` 对方的 Agent Card，知道对方有什么能力、支持哪种协议；发 `SendMessage` 派活；服务端建一个 Task，边干边推状态；干完把产物挂到 Artifact 上，任务标成 `completed`。中途需要补充信息的话，任务停在 `input-required`，客户端补一条消息、带上同一个 `task_id` 就能接着走。
+本实验中，客户端先读取 Agent Card，再通过 JSON-RPC 绑定发送消息。简单回应直接返回 Message。需要跟踪进度时，服务端返回 Task。客户端可以查询任务，或通过支持流式的接口接收更新。任务需要补充输入时，客户端把原任务 ID 放进下一条消息继续处理。
 
 这次实践要做三件事：写一个服务端，把「统计文本」发布成远程 agent；写一个客户端，从零发现它、派任务、收事件；写一个裸 HTTP 的探测脚本，绕过 SDK 看报文长什么样。
 
@@ -16,10 +16,9 @@ A2A 是 Agent2Agent 的简称，一个让独立部署的 agent 互相通信的�
 mkdir -p "6. 概念实践/a2a"
 cd "6. 概念实践/a2a"
 python3.14 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
 ```
 
-`requirements.txt` 只有两行，pin 死版本：
+在空目录动手时，先创建以下 `requirements.txt`。使用仓库里的完整实验时可直接安装该文件。
 
 ```text
 a2a-sdk[http-server]==1.3.1
@@ -28,9 +27,10 @@ uvicorn==0.54.0
 
 `[http-server]` 这个 extra 带 starlette 和 SSE 支持。没装 FastAPI，直接用 starlette 挂路由，少一层框架。
 
-先确认 SDK 能 import：
+然后安装依赖并查看 SDK 的任务状态枚举。
 
 ```bash
+.venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python -c "from a2a import types; print(types.TaskState.keys())"
 ```
 
@@ -40,7 +40,7 @@ uvicorn==0.54.0
  'TASK_STATE_AUTH_REQUIRED']
 ```
 
-这就是任务能处的全部状态。下面五步就是把这些状态一个一个走通。
+这是 SDK 的状态枚举，其中 `UNSPECIFIED` 是零值。本实验覆盖提交、执行、等待输入和完成的主路径。
 
 ## 6.2 第一步：发布一张 Agent Card
 
@@ -98,13 +98,13 @@ app = Starlette(
 几个字段值得注意：
 
 - `supported_interfaces` 是数组。v1.0 改成数组以后，一个 agent 可以同时挂 JSON-RPC、gRPC、HTTP+JSON，各自声明协议版本。这里只填一个 JSON-RPC。
-- `capabilities` 先留空。第三步要开流式时再改成 `AgentCapabilities(streaming=True)`，不然客户端会以为服务端支持流式。
+- `capabilities` 先留空。第三步开流式时改成 `AgentCapabilities(streaming=True)`，将流式能力声明给客户端。
 - `url` 写的是服务端自己的地址。换成部署环境要跟着改。
 
 启动：
 
 ```bash
-uvicorn server:app --host 127.0.0.1 --port 9999
+.venv/bin/python -m uvicorn server:app --host 127.0.0.1 --port 9999
 ```
 
 验证：
@@ -128,7 +128,7 @@ curl -s http://127.0.0.1:9999/.well-known/agent-card.json | python3 -m json.tool
 
 上面是节选，`skills` 里还有 `description` 和 `tags`。`json.tool` 默认把中文转成 `\u` 转义，要看原文直接 `curl` 不接管道。
 
-路径是协议定死的，客户端不需要先约定什么就能发现。JSON 字段是 camelCase，写 proto 时的 `supported_interfaces` 在这里变成 `supportedInterfaces`。
+已知服务的基地址时，客户端可以访问规范定义的 well-known 路径获取卡片。A2A 也允许目录服务和直接提供卡片等发现方式。JSON 使用 lower camel case，例如 `supported_interfaces` 在响应里是 `supportedInterfaces`。这里的 `protocolVersion: "1.0"` 是线上接口版本，本文引用的是该版本的 v1.0.1 规范修订。 [Agent Card 发现机制](https://a2a-protocol.org/v1.0.1/specification/#82-discovery-mechanisms)
 
 ## 6.3 第二步：让 agent 能回消息
 
@@ -214,7 +214,7 @@ curl -s -X POST http://127.0.0.1:9999/ \
 }
 ```
 
-注意方法名是 `SendMessage`，不是 `message/send`。v1.0 的操作名全部改成了 PascalCase，v0.3 的小写带斜杠那套已经失效。role 是 `ROLE_USER`，state 也一样用大写枚举。
+本实验使用 v1.0 的 JSON-RPC 方法名 `SendMessage`。ProtoJSON 里的枚举值保留前缀，例如 `ROLE_USER` 和 `TASK_STATE_COMPLETED`。
 
 到这里，一个能被调用、能回话的远程 agent 就有了。还没有任务的概念。
 
@@ -248,7 +248,7 @@ await updater.start_work()
 await updater.complete()
 ```
 
-这样写客户端会直接报错：
+在这个 SDK 的默认请求处理器里，只入队状态更新会导致下面的错误。
 
 ```text
 InvalidAgentResponseError: Agent should enqueue Task before TaskStatusUpdateEvent event
@@ -279,7 +279,7 @@ await updater.add_artifact(
 await updater.complete()
 ```
 
-一次任务产生四类事件：入队的 `Task` 给 ID 和初始状态，`start_work()` 推 working 并捎一句 agent 的话，`add_artifact()` 交产物，`complete()` 收尾。产物用 `append` / `last_chunk` 控制分片追加，示例只有一片。
+这条路径依次产生四条事件。入队的 `Task` 给出 ID 和初始状态。`start_work()` 和 `complete()` 都发状态更新，中间的 `add_artifact()` 发产物更新。分片产物可用 `append` 和 `last_chunk` 表达追加与结束，示例一次发送完整产物。
 
 客户端改用 SDK，不再手拼 JSON。新建 `client.py`：
 
@@ -310,7 +310,7 @@ async with httpx.AsyncClient(timeout=30) as http:
 `describe()` 按 `HasField` 逐个判断事件类型（[完整实现](../a2a/client.py#L25)）。跑：
 
 ```bash
-python client.py "统计：回归测试"
+.venv/bin/python client.py "统计：回归测试"
 ```
 
 ```text
@@ -371,7 +371,7 @@ if (
 跑两次，中间换进程：
 
 ```bash
-python client.py "ask"
+.venv/bin/python client.py "ask"
 ```
 
 ```text
@@ -384,7 +384,7 @@ Task      id=3864adfa-caf3-4b02-82e6-04908b43b348 state=TASK_STATE_SUBMITTED
 第一个进程到这里就退出了。另开一个：
 
 ```bash
-python client.py "任务可以跨进程恢复，只要带着 task_id 回来。" \
+.venv/bin/python client.py "任务可以跨进程恢复，只要带着 task_id 回来。" \
   --task 3864adfa-caf3-4b02-82e6-04908b43b348
 ```
 
@@ -413,13 +413,13 @@ def rpc(http: httpx.Client, method: str, params: dict, call_id: str = "1") -> di
     return response.json()
 ```
 
-拿任务：非流式的 `SendMessage` 会等任务进入终态才返回，所以 `result.task.id` 已经拿到了。换进程后用它查：
+当返回 Task 时，默认阻塞的 `SendMessage` 会等到终态或等待输入、授权等中断状态。请求设置 `configuration.returnImmediately: true` 时可提前返回新建任务。收到 `result.task.id` 后，客户端可以在新的进程里用这个 ID 查询。 [SendMessage 配置](https://a2a-protocol.org/v1.0.1/specification/#311-send-message)
 
 ```python
 fetched = rpc(http, "GetTask", {"id": task_id}, call_id="2")
 ```
 
-原始响应长这样（节选）：
+以下是 `GetTask` 响应的节选。
 
 ```json
 {
@@ -437,7 +437,7 @@ fetched = rpc(http, "GetTask", {"id": task_id}, call_id="2")
 
 注意 `state` 在 `status` 里，不在顶层。`history` 保留了过程中的 agent 消息。
 
-参数不对时报错：
+可以发送缺字段的消息观察错误响应。
 
 ```python
 rpc(http, "SendMessage", {"message": {"role": "ROLE_USER"}}, call_id="3")
@@ -450,14 +450,17 @@ rpc(http, "SendMessage", {"message": {"role": "ROLE_USER"}}, call_id="3")
     "message": "Validation failed",
     "data": [{"@type": "type.googleapis.com/google.rpc.ErrorInfo", "reason": "INVALID_PARAMS",
               "domain": "a2a-protocol.org",
-              "metadata": {"errors": [{"field": "message.message_id", "message": "Field is required."}]}}]
+          "metadata": {"errors": [
+            {"field": "message.message_id", "message": "Field is required."},
+            {"field": "message.parts", "message": "Field must contain at least one element."}
+          ]}}]
   },
   "id": "3",
   "jsonrpc": "2.0"
 }
 ```
 
-`data` 里是 `google.rpc.ErrorInfo` 和 `google.rpc.BadRequest`，逐字段列违规项。这就是 v1.0 的错误模型。
+上面只展示了 `error.data` 中的一项。本实验的 SDK 还返回 `google.rpc.BadRequest`，其中的 `fieldViolations` 列出了缺少的 `message_id` 和 `parts`。协议允许用 `data` 提供结构化错误详情，具体字段以实际响应为准。 [JSON-RPC 错误结构](https://a2a-protocol.org/v1.0.1/specification/#96-error-handling)
 
 用 v0.3 的方法名打过去：
 
@@ -498,7 +501,7 @@ protobuf 7 删掉了 `FieldDescriptor.label`。反射字段时用 `is_repeated`�
 
 ## 参考
 
-- [A2A 规范](https://a2a-protocol.org/latest/specification/)
+- [A2A v1.0.1 规范](https://a2a-protocol.org/v1.0.1/specification/)
 - [A2A 项目仓库](https://github.com/a2aproject/A2A)
 - [a2a-python SDK](https://github.com/a2aproject/a2a-python)
 - [v1.0 变更说明](https://a2a-protocol.org/latest/whats-new-v1/)

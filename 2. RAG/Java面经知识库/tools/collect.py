@@ -86,6 +86,21 @@ def inspect_source(spec):
 def raw_url(info, path):
     return 'https://raw.githubusercontent.com/' + info['repo'] + '/' + info['commit'] + '/' + urllib.parse.quote(path)
 
+def document_title(text, path):
+    front_matter = re.match(r'\A---\r?\n(.*?)\r?\n---(?:\r?\n|\Z)', text, re.DOTALL)
+    if front_matter:
+        title = re.search(r'^title:[ \t]*(\S[^\r\n]*)', front_matter[1], re.MULTILINE)
+        if title:
+            value = title[1].strip()
+            if len(value) >= 2 and value[0] in "\"'" and value[0] == value[-1]:
+                return value[1:-1]
+            return value
+        text = text[front_matter.end():]
+
+    pattern = r'^=[ \t]+(.+)' if Path(path).suffix == '.adoc' else r'^#[ \t]+(.+)'
+    heading = re.search(pattern, text, re.MULTILINE)
+    return heading[1].strip() if heading else Path(path).stem
+
 def download(x):
     url = raw_url(x, x['path'])
     dest = ROOT / 'corpus' / x['name'] / x['path']
@@ -102,10 +117,7 @@ def download(x):
     if text.lstrip().lower().startswith(('<!doctype html', '<html', '404: not found')):
         raise ValueError('not a document: ' + x['path'])
     dest.write_bytes(data)
-    title = next((m.group(1).strip() for line in text.splitlines()
-                  if (m := re.match(r'^#{1,6}\s+(.+)|^=+\s+(.+)', line)) and m.group(1)), None)
-    if not title:
-        title = next((line.lstrip('= ').strip() for line in text.splitlines() if line.startswith('= ')), Path(x['path']).stem)
+    title = document_title(text, x['path'])
     return dict(id=hashlib.sha256((x['repo']+'/'+x['path']).encode()).hexdigest()[:16],
                 title=title, path=dest.relative_to(ROOT).as_posix(), source=x['name'],
                 repository=x['repo'], original_path=x['path'], commit=x['commit'],

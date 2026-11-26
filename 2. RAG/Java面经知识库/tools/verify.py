@@ -6,6 +6,7 @@ import hashlib
 import json
 import re
 from pathlib import Path
+from collect import document_title
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -53,6 +54,7 @@ def main():
             pdfs.append(r['path'])
         else:
             text=data.decode('utf-8-sig')
+            r['title'] = document_title(text, r['path'])
             compact=re.sub(r'\s+','',text)
             assert len(compact)>=500 and len(data)>=1800
             digest=hashlib.sha256(compact.encode()).hexdigest()
